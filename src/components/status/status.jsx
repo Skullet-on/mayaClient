@@ -16,13 +16,13 @@ class Status extends Component {
   fetchData(){
     fetch('/api/status')
       .then(res => { this.handleResponse(res) })
-      .catch(error => console.log('parsung failed', error))
+      .catch(error => console.log('parsing failed', error))
   }
 
   handleResponse(res){
     const status = res.status === 200
     ? res.json().then(response => this.setState({status: response.status}))
-      .catch(error => console.log('parsung failed', error))
+      .catch(error => console.log('parsing failed', error))
     : this.setState({status: res.status})
   }
 

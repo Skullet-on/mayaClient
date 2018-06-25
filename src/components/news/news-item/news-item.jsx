@@ -5,11 +5,11 @@ export default class NewsItem extends Component{
     super(props);
   }
   render(){
-    const news = this.props.news
+    const { title, text } = this.props.news
     return(
       <div>
-        <h3 className="mb-1"><b>title: </b>{ news.title }</h3>
-        <h5 className="mb-1"><i>Text: </i> { news.text }</h5>
+        <h3><b>title: </b>{ title }</h3>
+        <h5><i>Text: </i> { text }</h5>
       </div>
     );
   }

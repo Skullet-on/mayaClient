@@ -5,7 +5,8 @@ class NewsList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      newsList: []
+      newsList: [],
+      status: []
     };
   }
   
@@ -15,20 +16,32 @@ class NewsList extends Component {
 
   fetchData(){
     fetch('/api/news')
-      .then(res => res.json())
-      .then(newsList => this.setState({newsList}))
+      .then(res => { this.handleResponse(res) })
+      .catch(error => console.log('parsing failed', error))
+  }
+
+  handleResponse(res){
+    console.log(res.status);
+    const status = res.status === 200
+    ? res.json().then(response => this.setState({
+      newsList: response, 
+      status: res.status
+    }))
+      .catch(error => console.log('parsing failed', error))
+    : this.setState({status: res.status})
   }
 
   render() {
     return (
       <div>
-        <div>
-          {
-            this.state.newsList.map((news) => 
-              <NewsItem news={news} />
-            )
-          }
-        </div>
+        {
+          this.state.newsList.map((news) => 
+            <NewsItem key={news.id} news={news} />
+          )
+        }
+        {
+          this.state.status
+        }
       </div>
     );
   }
