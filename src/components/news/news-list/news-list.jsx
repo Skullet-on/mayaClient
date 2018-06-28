@@ -15,20 +15,20 @@ class NewsList extends Component {
 
 	fetchData(){
 		fetch('/api/news')
-			.then(res => { this.handleResponse(res) })
+			.then(res => { 
+				res.status === 200
+					? this.handleSuccess(res)
+					: this.handleError(res) 
+			})
 			.catch(error => console.warn('parsing failed', error))
-	}
-
-	handleResponse(res) {
-		res.status === 200
-			? this.handleSuccess(res)
-			: this.handleError(res)
-	}
+	} 
 
 	handleSuccess(res) {
-		res.json().then(response => this.setState({
-			newsList: response
-		}))
+		res.json()
+			.then(response => this.setState({
+				newsList: response
+			}))
+			.catch(error => console.warn(error))
 	}
 
 	handleError(res) {
@@ -42,9 +42,6 @@ class NewsList extends Component {
 					this.state.newsList.map((news) => 
 						<NewsItem key={news.id} news={news} />
 					)
-				}
-				{
-					this.state.status
 				}
 			</div>
 		);
