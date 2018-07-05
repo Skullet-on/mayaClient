@@ -1,3 +1,7 @@
+import { shallow, mount, render } from 'enzyme';
+
+const wrapper = shallow(<Foo />);
+
 function sum(a, b) {
   return a + b;
 }
