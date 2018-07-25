@@ -9,7 +9,7 @@ export default class NewsItem extends Component{
     return(
       <div>
         <h3><b>title: </b>{ title }</h3>
-        <h5><i>Text: </i> { text }</h5>
+        <h5><i>Text: </i>{ text }</h5>
       </div>
     );
   }
