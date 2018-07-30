@@ -35,14 +35,16 @@ class FaqList extends Component {
 		console.warn(res.status)
 	}
 
+	list(){
+		return this.state.faqList.map((faq) => 
+			<FaqItem key={faq.id} faq={faq} />
+		)
+	}
+
 	render() {
 		return (
 			<div>
-				{
-					this.state.faqList.map((faq) => 
-						<FaqItem key={faq.id} faq={faq} />
-					)
-				}
+				{ this.list() }
 			</div>
 		);
 	}

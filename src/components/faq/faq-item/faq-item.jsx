@@ -1,19 +1,12 @@
 import React, {Component} from 'react';
 
 export default class FaqItem extends Component{
-	constructor(props){
-		super(props);
-		this.state = {
-			question: this.props.faq.question,
-			answer: this.props.faq.answer
-		}
-	}
-
 	render(){
+		const { question, answer } = this.props.faq
 		return(
 			<div>
-				<b>Question: </b>{this.state.question} 
-				<b>Answer: </b>{this.state.question}
+				<b>Question: </b>{question} 
+				<b>Answer: </b>{answer}
 			</div>
 		);
 	}

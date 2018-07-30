@@ -6,14 +6,13 @@ export default class FaqCreate extends Component{
 		this.state = {
 			question: '',
 			answer: '',
-			msg: ''
+			message: ''
 		}
-		this.handleSubmit = this.handleSubmit.bind(this)
 	}
 
 	handleSubmit(event) {
 		event.preventDefault()
-		var data = {
+		const data = {
 			question: this.state.question,
 			answer: this.state.answer
 		}
@@ -23,13 +22,13 @@ export default class FaqCreate extends Component{
 			body: JSON.stringify(data)
 		}).then(response => {
 			if (response.status >= 400) {
-				throw new Error("Bad response from server");
+				throw new Error("Bad request");
 			}
 			return response.json();
 		}).then(data => {
 			console.log(data)    
-			if(data == "success"){
-				this.setState({msg: "Thanks for registering"});  
+			if(data === "success"){
+				this.setState({message: "Thanks for registering"});  
 			}
 		}).catch(err => {
 			console.log(err)
@@ -43,22 +42,20 @@ export default class FaqCreate extends Component{
 	render(){
 		return(
 			<div>
-				<form onSubmit={this.handleSubmit} method="POST">
+				<form onSubmit={e => this.handleSubmit(e)} method="POST">
 					<label>Question</label>
 					<input 
-						onChange={this.handleChange.bind(this)}
+						onChange={e => this.handleChange(e)}
 						value={this.state.question} 
 						placeholder='Question' 
 						name='question'/>
 					<label>Answer</label>
-					<textArea 
-						onChange={this.handleChange.bind(this)}
+					<textarea 
+						onChange={e => this.handleChange(e)}
 						value={this.state.answer} 
 						placeholder='Answer' 
 						name='answer'/>
-					<div>
-						<button>Submit</button>
-					</div>
+					<button>Submit</button>
 				</form>
 			</div>
 		);
