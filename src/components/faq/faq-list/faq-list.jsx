@@ -10,31 +10,16 @@ class FaqList extends Component {
 	}
 	
 	componentDidMount() {
-		this.fetchData();
+		this.getData()
 	}
 
-	fetchData(){
-		fetch('/api/faq')
-			.then(res => { 
-				res.status === 200
-					? this.handleSuccess(res)
-					: this.handleError(res) 
-			})
-			.catch(error => console.warn('parsing failed', error))
-	} 
-
-	handleSuccess(res) {
-		res.json()
-			.then(response => this.setState({
-				faqList: response
-			}))
-			.catch(error => console.warn(error))
+	getData(){
+		this.props.api('/api/faq', 'GET')
+			.then(res => res.json())
+			.then(faqs => this.setState({ faqList: faqs }))
+			.catch(err => console.error(err.message))
 	}
-
-	handleError(res) {
-		console.warn(res.status)
-	}
-
+	
 	list(){
 		return this.state.faqList.map((faq) => 
 			<FaqItem key={faq.id} faq={faq} />

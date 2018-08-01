@@ -5,6 +5,18 @@ import FaqCreate from './faq/faq-create/faq-create';
 import FaqList from './faq/faq-list/faq-list';
 
 class App extends Component {
+	api(url, method){
+		fetch(url, {
+			method: method,
+			headers: {'Content-Type': 'application/json'}
+		}).then(response => {
+			if (response.status >= 400) {
+				throw 'toaster should be shown'
+			}
+			return response;
+		})
+	}
+
 	render() {
 		return (
 			<div className="App">
@@ -13,7 +25,7 @@ class App extends Component {
 				</header>
 				<Status />
 				<FaqCreate />
-				<FaqList />
+				<FaqList api={(method, url) => this.api(method, url)} />
 			</div>
 		);
 	}
