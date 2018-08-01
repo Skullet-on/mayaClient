@@ -16,23 +16,10 @@ export default class FaqCreate extends Component{
 			question: this.state.question,
 			answer: this.state.answer
 		}
-		fetch("/api/faq", {
-			method: 'POST',
-			headers: {'Content-Type': 'application/json'},
-			body: JSON.stringify(data)
-		}).then(response => {
-			if (response.status >= 400) {
-				throw new Error("Bad request");
-			}
-			return response.json();
-		}).then(data => {
-			console.log(data)    
-			if(data === "success"){
-				this.setState({message: "Thanks for registering"});  
-			}
-		}).catch(err => {
-			console.log(err)
-		});
+		this.props.api('/api/faq', 'POST', JSON.stringify(data))
+			.then(res => res.json())
+			.then(faqs => this.setState({ faqList: faqs }))
+			.catch(err => console.error(err.message))
 	}
 
 	handleChange(e) {

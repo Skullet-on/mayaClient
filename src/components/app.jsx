@@ -5,13 +5,16 @@ import FaqCreate from './faq/faq-create/faq-create';
 import FaqList from './faq/faq-list/faq-list';
 
 class App extends Component {
-	api(url, method){
-		fetch(url, {
+	api(url, method = 'GET', body = {}){
+		const handledStatuses = [200, 201, 204, 400, 401, 404];
+
+		return fetch(url, {
 			method: method,
-			headers: {'Content-Type': 'application/json'}
+			headers: {'Content-Type': 'application/json'},
+			body: body
 		}).then(response => {
-			if (response.status >= 400) {
-				throw 'toaster should be shown'
+			if (!handledStatuses.includes(response.status)) {
+				throw new Error("Bad request");
 			}
 			return response;
 		})
@@ -24,8 +27,8 @@ class App extends Component {
 					<h1 className="App-title">Welcome to React</h1>
 				</header>
 				<Status />
-				<FaqCreate />
-				<FaqList api={(method, url) => this.api(method, url)} />
+				<FaqCreate api={(url, method, body) => this.api(url, method, body)}  />
+				<FaqList api={(url, method, body) => this.api(url, method, body)} />
 			</div>
 		);
 	}
