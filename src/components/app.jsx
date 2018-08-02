@@ -26,9 +26,7 @@ class App extends Component {
 					<h1 className="App-title">Welcome to React</h1>
 				</header>
 				<Status />
-				<Router />
-				<FaqCreate api={(url, method, body) => this.api(url, method, body)}  />
-				<FaqList api={(url, method, body) => this.api(url, method, body)} />
+				<Router api={(url, method, body) => this.api(url, method, body)} />
 			</div>
 		);
 	}
