@@ -10,7 +10,6 @@ export default class Router extends Component{
 			<Switch>
 				<Route path="/news" component={NewsList} />
 				<Route 
-					exact 
 					path="/faq" 
 					render={() => <FaqList api={this.props.api} />} 
 				/>
