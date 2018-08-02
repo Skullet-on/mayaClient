@@ -27,6 +27,8 @@ class App extends Component {
 				</header>
 				<Status />
 				<Router />
+				<FaqCreate api={(url, method, body) => this.api(url, method, body)}  />
+				<FaqList api={(url, method, body) => this.api(url, method, body)} />
 			</div>
 		);
 	}
