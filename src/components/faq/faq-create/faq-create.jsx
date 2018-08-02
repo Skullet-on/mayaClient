@@ -28,23 +28,21 @@ export default class FaqCreate extends Component{
 
 	render(){
 		return(
-			<div>
-				<form onSubmit={e => this.handleSubmit(e)} method="POST">
-					<label>Question</label>
-					<input 
-						onChange={e => this.handleChange(e)}
-						value={this.state.question} 
-						placeholder='Question' 
-						name='question'/>
-					<label>Answer</label>
-					<textarea 
-						onChange={e => this.handleChange(e)}
-						value={this.state.answer} 
-						placeholder='Answer' 
-						name='answer'/>
-					<button>Submit</button>
-				</form>
-			</div>
+			<form onSubmit={e => this.handleSubmit(e)} method="POST">
+				<label>Question</label>
+				<input 
+					onChange={e => this.handleChange(e)}
+					value={this.state.question} 
+					placeholder='Question' 
+					name='question'/>
+				<label>Answer</label>
+				<textarea 
+					onChange={e => this.handleChange(e)}
+					value={this.state.answer} 
+					placeholder='Answer' 
+					name='answer'/>
+				<button>Submit</button>
+			</form>
 		);
 	}
 }

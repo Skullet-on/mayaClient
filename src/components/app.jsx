@@ -13,9 +13,6 @@ class App extends Component {
 			headers: {'Content-Type': 'application/json'},
 			body: body
 		}).then(response => {
-			if (!handledStatuses.includes(response.status)) {
-				throw new Error("Bad request");
-			}
 			return response;
 		})
 	}
