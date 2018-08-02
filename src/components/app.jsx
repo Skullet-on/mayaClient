@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import './app.css';
 import Router from './router';
 import Status from './status/status';
-import FaqCreate from './faq/faq-create/faq-create';
-import FaqList from './faq/faq-list/faq-list';
 
 
 class App extends Component {
 	api(url, method = 'GET', body = {}){
-		const handledStatuses = [200, 201, 204, 400, 401, 404];
-
 		return fetch(url, {
 			method: method,
 			headers: {'Content-Type': 'application/json'},
