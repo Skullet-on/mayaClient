@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './app.css';
+import Routes from '../routes';
 import Status from './status/status';
 import FaqCreate from './faq/faq-create/faq-create';
 import FaqList from './faq/faq-list/faq-list';
+
 
 class App extends Component {
 	api(url, method = 'GET', body = {}){
@@ -24,6 +26,7 @@ class App extends Component {
 					<h1 className="App-title">Welcome to React</h1>
 				</header>
 				<Status />
+				<Routes />
 				<FaqCreate api={(url, method, body) => this.api(url, method, body)}  />
 				<FaqList api={(url, method, body) => this.api(url, method, body)} />
 			</div>
