@@ -20,7 +20,7 @@ class Status extends Component {
 	}
 
 	handleResponse(res){
-		const status = res.status === 200
+		res.status === 200
 		? res.json().then(response => this.setState({status: response.status}))
 			.catch(error => console.log('parsing failed', error))
 		: this.setState({status: res.status})
