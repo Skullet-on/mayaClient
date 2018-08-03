@@ -7,6 +7,7 @@ export default class MenuItem extends Component{
 		return (
 			<Link
 				to={ text }
+				id={this.props.id}
 			>
 				{ text.toUpperCase() }
 			</Link>

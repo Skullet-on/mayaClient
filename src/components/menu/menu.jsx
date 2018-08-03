@@ -13,8 +13,8 @@ export default class Menu extends Component{
 	}
 
 	list(){
-		return this.state.menuItems.map((item, key)=> <MenuItem 
-			key={ key } 
+		return this.state.menuItems.map((item, index)=> <MenuItem 
+			id={ index } 
 			item={ item }
 		/>)
 	}
