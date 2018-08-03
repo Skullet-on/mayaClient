@@ -5,8 +5,8 @@ export default class NewsItem extends Component{
 		const { title, text } = this.props.news
 		return(
 			<div>
-				<h3><b>title: </b>{ title }</h3>
-				<h5><i>Text: </i>{ text }</h5>
+				<b>title: </b>{ title }
+				<b>Text: </b>{ text }
 			</div>
 		);
 	}
