@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 import Router from './router';
 import Status from './status/status';
+import MenuContainer from './menu/menu-container';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
 					<h1 className="App-title">Welcome to React</h1>
 				</header>
 				<Status />
+				<MenuContainer />
 				<Router api={(url, method, body) => this.api(url, method, body)} />
 			</div>
 		);
