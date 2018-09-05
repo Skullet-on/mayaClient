@@ -1,0 +1,50 @@
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import './style.css';
+
+export default class Button extends Component{
+	static defaultProps = {
+		url:      '',
+		onClick:  () => {}
+	};
+
+	handleClick(e){
+		e.stopPropagation();
+		this.props.onClick(e);
+	}
+
+	isExternalLink(){
+		const url = this.props.url;
+		return url.startsWith('http') || url.startsWith('//');
+	}
+
+	renderButton(){
+		return  <button
+				onClick={e => this.handleClick(e)}
+				className={this.props.className}>
+				{this.props.value}
+			</button>
+	}
+
+	renderLink(){
+		return this.isExternalLink()
+		? <a href={this.props.url}
+			onClick={e => this.handleClick(e)}
+			className={this.props.className}>
+			{this.props.value}
+		</a>
+		: <Link to={this.props.url}
+			onClick={e => this.handleClick(e)}
+			className={this.props.className}>
+			{this.props.value}
+		</Link>
+	}
+
+	render(){
+		return (
+			<li>
+				{this.props.url ? this.renderLink() : this.renderButton()}
+			</li>
+		)
+	}
+}

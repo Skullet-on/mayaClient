@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 import Router from './router';
-import Status from './status/status';
-import Menu from './menu/menu';
+import Navbar from './navbar';
 
 
 class App extends Component {
@@ -19,11 +18,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<h1 className="App-title">Welcome to React</h1>
-				</header>
-				<Status />
-				<Menu />
+				<Navbar />
 				<Router api={(url, method, body) => this.api(url, method, body)} />
 			</div>
 		);
