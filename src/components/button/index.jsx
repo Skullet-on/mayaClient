@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import './style.css';
+import './button.css';
 
 export default class Button extends Component{
 	static defaultProps = {
@@ -42,9 +42,7 @@ export default class Button extends Component{
 
 	render(){
 		return (
-			<li>
-				{this.props.url ? this.renderLink() : this.renderButton()}
-			</li>
+			this.props.url ? this.renderLink() : this.renderButton()
 		)
 	}
 }

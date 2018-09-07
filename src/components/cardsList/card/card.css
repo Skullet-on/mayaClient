@@ -1,0 +1,19 @@
+.normal {
+	display: flex;
+	margin: 10px;
+	align-items: center;
+}
+.reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 10px;
+	align-items: center;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+}
+.normal img,
+.reverse img {
+	background-color: #ffffff;
+}

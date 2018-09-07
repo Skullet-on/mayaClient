@@ -11,8 +11,8 @@ a {
 	font-size: 1.45em;
 }
 .header img {
-	height: 39px;
-	padding-top: 5px;
+	display: flex;
+	height: 50px;
 	padding-left: 10px;
 }
 .menu {
@@ -26,23 +26,25 @@ a {
 	display: block;
 }
 .menu a {
-	color: #34495e;
-	font-size: .99em;
+	color: #666666;
+	font-size: 1.4em;
 }
 .menu a:hover {
-	color: #718daa;
+	color: #ff6600;
 }
 .header {
+	display: flex;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	padding-top: .5em;
 	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+.header.static {
+	background-color: rgba(255,255,255,0);
+}
+.header.fixed {
+	background-color: #999999;
 }
 @media (min-width: 769px) {
 	.header,
