@@ -1,0 +1,36 @@
+.container {
+	min-height: 100vh;
+	background: url(../../assets/images/bg2.png) no-repeat 0 0 transparent;
+	background-size: 100% 800px;
+	padding-top: 76px;
+	display: flex;
+	flex-direction: column;
+}
+.current {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.oldest {
+	padding-top: 76px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.collapse {
+	display: flex;	
+}
+.collapse .item {
+	flex: 1;
+	background: rgba(255,255,255,.5);
+	color: #666666;
+	border-radius: 10px;
+	justify-content: space-between;
+}
+.item p {
+	margin: 0;
+}
+.toggle {
+	cursor: pointer;
+}

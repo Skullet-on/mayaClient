@@ -33,6 +33,7 @@ a {
 	color: #ff6600;
 }
 .header {
+	transition-duration: .6s;
 	display: flex;
 	position: fixed;
 	top: 0;

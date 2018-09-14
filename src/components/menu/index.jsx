@@ -9,15 +9,14 @@ export default class Menu extends Component{
 			menuItems: [
 				{
 					url: "/home",
-					text: "home",
-					active: true
+					text: "home"
 				},
 				{
 					url: "/faq",
 					text: "FAQ"
 				},
 				{
-					url: "/download",
+					url: "/downloads",
 					text: "Download"
 				},
 				{

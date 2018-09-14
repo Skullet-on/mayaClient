@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 import Router from './router';
 import Navbar from './navbar';
-import Button from './button';
-import CardsList from './cardsList';
-
+import Footer from './footer';
 
 class App extends Component {
 	api(url, method = 'GET', body = {}){
@@ -21,20 +19,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Navbar />
-				<div className="section1">
-					<h1>More than Amazon S3</h1>
-					<h1>More than Windows Network drive</h1>
-					<h1><Button 
-						url="/Download"
-						value="Download"
-						className="button primary large"
-					/></h1>
-				</div>
-				<div className="section2">
-					<CardsList />
-				</div>
-				<div className="section3"><Router api={(url, method, body) => this.api(url, method, body)} /></div>
-				
+				<Router api={(url, method, body) => this.api(url, method, body)} />
+				<Footer />
 			</div>
 		);
 	}

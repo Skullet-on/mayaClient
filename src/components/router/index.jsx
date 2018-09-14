@@ -1,17 +1,34 @@
 import React, {Component} from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import NewsList from '../news/news-list/news-list';
-import FaqList from '../faq/faq-list/faq-list';
+import Faq from '../faq';
+import Home from '../home';
+import Downloads from '../downloads';
+import Contacts from '../contacts';
 
 export default class Router extends Component{
 	render(){
 		return(
 			<Switch>
-				<Route path="/news" component={NewsList} />
-				<Route 
+				<Route exact
+					path="/" 
+					render={() => <Home />} 
+				/>
+				<Route exact
+					path="/home" 
+					render={() => <Home />} 
+				/>
+				<Route exact
 					path="/faq" 
-					render={() => <FaqList api={this.props.api} />} 
+					render={() => <Faq />} 
+				/>
+				<Route exact
+					path="/downloads" 
+					render={() => <Downloads />} 
+				/>
+				<Route exact
+					path="/contacts"
+					render={() => <Contacts />}
 				/>
 			</Switch>
 		)
