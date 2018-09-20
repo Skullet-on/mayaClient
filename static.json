@@ -1,0 +1,11 @@
+{
+  "root": "build/",
+  "proxies": {
+    "/api/": {
+      "origin": "${BACKEND_URL}",
+      "changeOrigin": true
+    }
+  },
+  "routes": {
+    "/**": "index.html"
+  }
