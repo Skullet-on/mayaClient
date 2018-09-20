@@ -1,0 +1,22 @@
+.normal {
+	display: flex;
+	margin: 10px;
+	align-items: center;
+}
+.reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 10px;
+	align-items: center;
+}
+.normal, .reverse {
+	border-radius: 20px;
+	background: rgba(60,60,60,.5);
+}
+.content {
+	display: flex;
+	flex-direction: column;
+}
+.normal img,
+.reverse img {
+}
