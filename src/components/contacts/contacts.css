@@ -13,7 +13,7 @@ form {
 	align-items: center;
 	justify-content: space-around;
 	width: 430px;
-	height: 480px;
+	height: 500px;
 	background: rgba(255,255,255,.5);
 	border-radius: 10px;
 }
@@ -25,9 +25,12 @@ input {
 }
 textarea {
 	width: 356px;
-	height: 200px;
 	border-radius: 10px;
 	padding: 10px;
+	resize: none;
+	border-width: 2px;
+	border-style: inset;
+    border-color: initial;
 }
 button {
 	width: 356px;
