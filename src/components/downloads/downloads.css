@@ -1,12 +1,3 @@
-.container {
-	min-height: 100vh;
-	width: 100vw;
-	background: url(../../assets/images/bg2.png) no-repeat 0 0 transparent;
-	background-size: 100% 800px;
-	padding-top: 76px;
-	display: flex;
-	flex-direction: column;
-}
 .current {
 	display: flex;
 	flex-direction: column;
@@ -14,23 +5,26 @@
 	align-items: center;
 }
 .oldest {
+	max-width: 1200px;
 	padding-top: 76px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .collapse {
-	display: flex;	
+	display: flex;
+	justify-content: space-around;
 }
 .collapse .item {
-	flex: 1;
+	max-width: 350px;
+	display: flex;
 	background: rgba(255,255,255,.5);
 	color: #666666;
 	border-radius: 10px;
 	justify-content: space-between;
 }
 .item p {
-	margin: 0;
+	margin: 0;	
 }
 .toggle {
 	cursor: pointer;

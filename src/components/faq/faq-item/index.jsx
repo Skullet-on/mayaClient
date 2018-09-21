@@ -16,14 +16,14 @@ export default class FaqItem extends Component{
 
 	renderToggle() {
 		return <div className="item">
-			<div onClick={(e) => this.handleClick(e)} className="question"><h1>+ {this.props.faq.question}</h1></div>
+			<div onClick={(e) => this.handleClick(e)} className="question"><h1>Q. {this.props.faq.question}</h1><h1>+</h1></div>
 		</div>
 	}
 
 	renderCollapsed() {
 		return <div className="item">
-			<div onClick={(e) => this.handleClick(e)} className="question"><h1>- {this.props.faq.question}</h1></div>
-			<div className="answer"><h2>{this.props.faq.answer}</h2></div>
+			<div onClick={(e) => this.handleClick(e)} className="question"><h1>Q. {this.props.faq.question}</h1><h1>-</h1></div>
+			<div className="answer"><h2>A. {this.props.faq.answer}</h2></div>
 		</div>
 	}
 

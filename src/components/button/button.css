@@ -20,17 +20,20 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	border-radius: 10px;
-	border: none;
+	border: 2px solid #f56430;
 	font-size: 24px;
+	min-height: 50px;
 }
 .primary {
-	background-color: var(--primary-color);
+	background-color: rgba(255,255,255,0);
+	color: #666666;
 }
 .default{
 	background-color: var(--default-color);
 }
 .primary:hover {
-	background-color: var(--primary-color-active);
+	background-color: var(--primary-color);
+	color: white;
 }
 .default:hover {
 	background-color: var(--default-color-active);
@@ -44,4 +47,7 @@
 	width: 90px;
 	height: 30px;
 	font-size: 19px;
+}
+.no-border {
+	border: none;
 }

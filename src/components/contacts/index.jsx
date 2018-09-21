@@ -13,9 +13,9 @@ export default class Contacts extends Component{
 						<input type="text" placeholder="Name"/>
 						<span>Subject</span>
 						<input type="text" placeholder="Subject"/>
-						<span>Body</span>
-						<textarea placeholder="Body"></textarea>
-						<button className="button default">Send</button>
+						<span>Message</span>
+						<textarea placeholder="Message"></textarea>
+						<button className="button default no-border">Send</button>
 					</form>
 				</div>
 			</div>

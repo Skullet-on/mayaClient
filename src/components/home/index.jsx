@@ -16,9 +16,7 @@ export default class Home extends Component{
 						className="button primary large"
 					/></h1>
 				</div>
-				<div className="section2">
-					<CardsList />
-				</div>
+				<CardsList />
 			</div>
 		)
 	}

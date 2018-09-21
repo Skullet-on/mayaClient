@@ -45,7 +45,7 @@ a {
 	background-color: rgba(255,255,255,0);
 }
 .header.fixed {
-	background-color: #999999;
+	background-color: rgba(255,255,255,.7);
 }
 @media (min-width: 769px) {
 	.header,
