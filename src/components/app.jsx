@@ -34,10 +34,10 @@ class App extends Component {
 				            <Home />
 				          </div>
 				          <div className="section" data-anchor="page2">
-				            <div class="slide"><Slide1 /></div>
-							<div class="slide"><Slide2 /></div>
-							<div class="slide"><Slide3 /></div>
-							<div class="slide"><Slide4 /></div>
+				            <div className="slide"><Slide1 /></div>
+							<div className="slide"><Slide2 /></div>
+							<div className="slide"><Slide3 /></div>
+							<div className="slide"><Slide4 /></div>
 				          </div>
 				          <div className="section" data-anchor="page3">
 				            <Faq />

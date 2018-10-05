@@ -5,12 +5,12 @@
 	justify-content: center;
 	height: 100%;
 	width: 100%;
-	background: #666666;
+	background: #777777;
 	font-size: 12pt;
 }
 .section2 .item {
 	color: #ffffff;
-	width: 100%;
+	width: 1366px;
 }
 
 .item div h1 {
@@ -31,10 +31,10 @@
 	justify-content: space-between;
 	min-height: 50px;
 	margin: 0;
-	background: #ff6600;
+	background: #ff8800;
 }
 
 .answer {
 	min-height: 38px;
-	background: #ff8800;
+	background: #ffaa00;
 }
