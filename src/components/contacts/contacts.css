@@ -16,7 +16,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #ff8800;
+	background: #e87d03;
 	width: 600px;
 	height: 500px;
 	color: #333333;
@@ -36,7 +36,7 @@
 	justify-content: space-around;
 	width: 430px;
 	height: 500px;
-	background: #ff8800;
+	background: #e87d03;
 }
 input {
 	width: 356px;
