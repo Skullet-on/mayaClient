@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import "./slide4.css";
 
 export default class Slide1 extends Component{
 	render(){
 		return (
-			<div className="slide4">
+			<div className="slide1">
 				<div className="row">
 					<h1>Uses advanced technologies</h1>
 					<img src="cyber.png" />

@@ -16,11 +16,15 @@
 	padding-left: 50px;
 	padding-right: 50px;
 	background: #e87d03;
-	color: white;
+	color: #cccccc;
 }
 .row {
 	display: flex;
 	flex-direction: row;
 	align-content: space-around;
 	justify-content: space-around;
+}
+.row img {
+	padding-left: 50px;
+	padding-right: 50px;
 }

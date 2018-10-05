@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import "./slide3.css";
 
 export default class Slide3 extends Component{
 	render(){
 		return (
-			<div className="slide3">
+			<div className="slide1">
 				<div className="row">
 					<h1>Extremely fast</h1>
 				</div>

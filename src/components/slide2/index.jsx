@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import "./slide2.css";
 
 export default class Slide2 extends Component{
 	render(){
 		return (
-			<div className="slide2">
+			<div className="slide1">
 				<div className="row">
 					<img src="bash.png" />
 					<h1>Can work with or without GUI</h1>

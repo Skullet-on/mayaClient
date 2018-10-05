@@ -1,8 +1,8 @@
 .button{
 	--primary-color: #e87d03;
 	--primary-color-active: #e87d03;
-	--default-color: #000000;
-	--default-color-active: #000000;
+	--default-color: #666666;
+	--default-color-active: #555555;
 	--light-color: #dcdcdc;
 	--dark-color: #ffffff;
 }
@@ -16,24 +16,22 @@
 	background-color: var(--default-color);
 	text-align: center;
 	cursor: pointer;
-	color: white;
+	color: #cccccc;
 	box-sizing: border-box;
 	text-decoration: none;
-	border-radius: 10px;
 	border: 2px solid #e87d03;
 	font-size: 24px;
 	min-height: 50px;
 }
 .primary {
 	background-color: rgba(255,255,255,0);
-	color: #ffffff;
+	color: #cccccc;
 }
 .default{
 	background-color: var(--default-color);
 }
 .primary:hover {
 	background-color: var(--primary-color);
-	color: white;
 }
 .default:hover {
 	background-color: var(--default-color-active);
