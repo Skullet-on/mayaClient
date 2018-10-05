@@ -26,7 +26,7 @@ a {
 	display: block;
 }
 .menu a {
-	color: #666666;
+	color: #ffffff;
 	font-size: 1.4em;
 }
 .menu a:hover {
@@ -42,10 +42,7 @@ a {
 	padding-bottom: .5em;
 }
 .header.static {
-	background-color: rgba(255,255,255,0);
-}
-.header.fixed {
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(66,66,66,1);
 }
 @media (min-width: 769px) {
 	.header,

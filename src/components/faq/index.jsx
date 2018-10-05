@@ -29,7 +29,7 @@ export default class Faq extends Component{
 
 	render(){
 		return(
-			<div className="container">
+			<div className="section2">
 				{ this.list() }
 			</div>
 		);
