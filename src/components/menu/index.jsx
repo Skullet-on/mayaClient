@@ -8,16 +8,8 @@ export default class Menu extends Component{
 		this.state = {
 			menuItems: [
 				{
-					url: "/home",
-					text: "home"
-				},
-				{
 					url: "/faq",
 					text: "FAQ"
-				},
-				{
-					url: "/downloads",
-					text: "Download"
 				},
 				{
 					url: "/contacts",

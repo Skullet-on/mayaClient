@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 import Router from './router';
-import Navbar from './navbar';
+import Toolbar from './toolbar';
 import Footer from './footer';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Navbar />
+				<Toolbar />
 				<Router api={(url, method, body) => this.api(url, method, body)} />
 				<Footer />
 			</div>

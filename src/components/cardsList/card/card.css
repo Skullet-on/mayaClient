@@ -10,16 +10,50 @@
 	align-items: center;
 }
 .normal, .reverse {
+	display: flex;
 	max-width: 1200px;
 	padding-left: 20px;
 	padding-right: 20px;
 	border-radius: 20px;
-	background: rgba(60,60,60,.5);
+	background: rgba(255,255,255,.5);
+}
+.normal img{
+	max-width: 500px;
+}
+.reverse img{
+	max-width: 500px;
 }
 .content {
 	display: flex;
 	flex-direction: column;
 }
-.normal img,
-.reverse img {
+.cardImage {
+	flex: 1;
+	max-width: 500px;
+}
+.cardContent {
+	flex: 3;
+}
+.cardContent h1 {
+	color: var(--primary);
+	text-shadow: 0 0 10px var(--dark);
+}
+.cardContent h2 {
+	color: var(--dark);
+}
+@media (max-width: 1025px) {
+	.normal img{
+		width: 300px;
+	}
+	.reverse img{
+		width: 300px;
+	}
+}
+@media (max-width: 769px) {
+	.normal img{
+		width: 100px;
+	}
+	.reverse img{
+		width: 100px;
+	}
 }

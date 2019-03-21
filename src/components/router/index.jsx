@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Faq from '../faq';
 import Home from '../home';
-import Downloads from '../downloads';
+import Features from '../cardsList';
 import Contacts from '../contacts';
 
 export default class Router extends Component{
@@ -23,8 +23,8 @@ export default class Router extends Component{
 					render={() => <Faq />} 
 				/>
 				<Route exact
-					path="/downloads" 
-					render={() => <Downloads />} 
+					path="/features" 
+					render={() => <Features />} 
 				/>
 				<Route exact
 					path="/contacts"

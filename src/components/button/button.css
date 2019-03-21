@@ -1,42 +1,33 @@
-.button{
-	--primary-color: #f56430;
-	--primary-color-active: #f3542f;
-	--default-color: #666666;
-	--default-color-active: #555555;
-	--light-color: #dcdcdc;
-	--dark-color: #ffffff;
-}
-
 .button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 150px;
 	height: 50px;
-	background-color: var(--default-color);
+	background-color: var(--default);
 	text-align: center;
 	cursor: pointer;
 	color: var(--light-color);
 	box-sizing: border-box;
 	text-decoration: none;
 	border-radius: 10px;
-	border: 2px solid #f56430;
 	font-size: 24px;
 	min-height: 50px;
 }
 .primary {
-	background-color: rgba(255,255,255,0);
-	color: #666666;
+	background-color: var(--primary);
+	color: var(--light);
 }
 .default{
-	background-color: var(--default-color);
+	background-color: var(--default);
 }
 .primary:hover {
-	background-color: var(--primary-color);
-	color: white;
+	background-color: var(--primary-active);
+	color: var(--light);
+	box-shadow: 0 0 10px 10px var(--primary-active);
 }
 .default:hover {
-	background-color: var(--default-color-active);
+	background-color: var(--default-active);
 }
 .large {
 	width: 300px;
@@ -49,5 +40,5 @@
 	font-size: 19px;
 }
 .no-border {
-	border: none;
+	border: none;	
 }
