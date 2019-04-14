@@ -10,7 +10,7 @@ export default class Home extends Component{
 					<h1>More than Amazon S3</h1>
 					<h1>More than Windows Network drive</h1>
 					<h1><Button 
-						url="/downloads"
+						url="https://drive.google.com/uc?authuser=0&id=1Yn_rXP_MtrYiI0dXnHhBR_rYuClqDvZP&export=download"
 						value="Download"
 						className="button primary large"
 					/></h1>
