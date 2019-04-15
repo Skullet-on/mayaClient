@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {Link} from 'react-router-dom';
 import DrawerToggleButton from './drawerToggleButton';
 import './toolbar.css';
 
@@ -36,22 +36,22 @@ export default class Toolbar extends Component{
 		let backdrop;
         if (this.state.isToggle) {
 			backdrop = <div className="toolbar_column"><ul>
-			<li><a href="/features">Features</a></li>
-			<li><a href="/faq">Faq</a></li>
-			<li><a href="/contacts">Contacts</a></li>
+			<li><Link to="/features">Features</Link></li>
+			<li><Link to="/faq">Faq</Link></li>
+			<li><Link to="/contacts">Contacts</Link></li>
 		</ul></div>
 		}
 		return (
 		<header className={this.state.className}>
 			<nav className={this.state.toggled}>
 				<div className="toolbar_row">
-					<div className="toolbar_logo"><a href="/home"><img src="logo3.png" alt="logo"></img></a></div>
+					<div className="toolbar_logo"><Link to="/home"><img src="logo3.png" alt="logo"></img></Link></div>
 					<div className="spacer" />
 					<div className="toolbar_navigation-items">
 						<ul>
-							<li><a href="/features">Features</a></li>
-							<li><a href="/faq">Faq</a></li>
-							<li><a href="/contacts">Contacts</a></li>
+							<li><Link to="/features">Features</Link></li>
+							<li><Link to="/faq">Faq</Link></li>
+							<li><Link to="/contacts">Contacts</Link></li>
 						</ul>
 					</div>
 					<div className="toolbar_toggle-button">

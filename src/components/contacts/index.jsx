@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './contacts.css';
 import { FormErrors } from './formErrors';
+import Tooltip from '../tooltip';
 
 export default class Contacts extends Component{
 	constructor(props) {
@@ -97,7 +98,7 @@ export default class Contacts extends Component{
 								onChange={e => this.handleChange(e)}
 								value={this.state.email} 
 								placeholder='Email' 
-								name='email'/>
+								name='email' />
 						</div>
 						<div className="form-item">
 							<h2>Name</h2>
