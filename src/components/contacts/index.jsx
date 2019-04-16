@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './contacts.css';
 import { FormErrors } from './formErrors';
-import Tooltip from '../tooltip';
 
 export default class Contacts extends Component{
 	constructor(props) {
@@ -35,9 +34,10 @@ export default class Contacts extends Component{
 			body: JSON.stringify(data)
 		})
 			.then(res => res.json())
-			.then(faqs => this.setState({ faqList: faqs }))
-			.catch(err => console.error(err.message))
+			.then(msg => console.log(msg))
+			.catch(err => console.error(err))
 		console.log("ok");
+		
 	}
 	handleChange(e) {
 		const name = e.target.name;
