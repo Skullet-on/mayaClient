@@ -14,11 +14,11 @@ export default class Footer extends Component{
 						<li><Link to="/home">
 							Home
 						</Link></li>
+						<li><Link to="/features">
+							Features
+						</Link></li>
 						<li><Link to="/faq">
 							FAQ
-						</Link></li>
-						<li><Link to="/downloads">
-							Downloads
 						</Link></li>
 						<li><Link to="/contacts">
 							Contact us

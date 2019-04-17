@@ -7,3 +7,41 @@ body {
 	margin: 0;
 	min-height: 100vh;
 }
+:root {
+	--default:			#999999;
+	--default-active:	#777777;
+	--primary:			#ff893b;
+	--primary-active:	#ff6600;
+	--dark:				#141414;
+	--light:			#dadada;
+	--danger:			#ff0000;
+	--success:			#00ff00;
+}
+html, body {
+	font-size: 16px;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+a, button {
+	transition: all 0.5s ease;
+}
+@media (max-width: 1025px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+@media (max-width: 769px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+}

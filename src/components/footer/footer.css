@@ -1,12 +1,12 @@
 footer {
 	display: flex;
 	justify-content: space-around;
-	background: #000000;
-	color: #ffffff;
+	background: var(--dark);
+	color: var(--light);
 }
 footer a {
 	color: #00bbff;
 }
 footer a:hover {
-	color: #ff6600;
+	color: var(--primary);
 }
