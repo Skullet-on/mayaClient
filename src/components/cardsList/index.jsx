@@ -47,7 +47,7 @@ export default class CardsList extends Component{
 
 	render(){
 		return(
-			<div className="container">
+			<div className="section2">
 				{ this.list() }
 			</div>
 		);

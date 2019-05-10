@@ -1,19 +1,25 @@
 * {
 	box-sizing: border-box;
 }
+@font-face {
+	font-family: 'Eras Demi ITC';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Eras Demi ITC'), url('./assets/ERASDEMI.woff') format('woff');
+	}
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Eras Demi ITC', 'Regular';
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
 }
 :root {
-	--default:			#999999;
-	--default-active:	#777777;
-	--primary:			#ff893b;
-	--primary-active:	#ff6600;
-	--dark:				#141414;
-	--light:			#dadada;
+	--default:			#405152;
+	--default-active:	#253031;
+	--primary:			#F39A31;
+	--primary-active:	#F3BE31;
+	--dark:				#0C2022;
+	--light:			#F2EFEA;
 	--danger:			#ff0000;
 	--success:			#00ff00;
 }

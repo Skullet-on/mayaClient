@@ -9,11 +9,9 @@
 }
 .normal, .reverse {
 	display: flex;
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 10px;
 	padding: 20px;
-	border-radius: 20px;
-	background: rgba(255,255,255,.5);
 }
 .normal img{
 	max-width: 500px;
@@ -34,11 +32,10 @@
 	flex: 3;
 }
 .cardContent h1 {
-	color: var(--primary);
-	text-shadow: 0 0 10px var(--dark);
+	color: var(--default);
 }
 .cardContent h2 {
-	color: var(--dark);
+	color: var(--default);
 }
 @media (max-width: 1025px) {
 	.normal img{

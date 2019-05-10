@@ -1,11 +1,9 @@
 .faq-container {
 	display: flex;
 	flex-direction: column;
-	background: rgba(255,255,255,.5);
-	color: var(--dark);
-	max-width: 1200px;
+	color: var(--default);
+	max-width: 1300px;
 	min-width: 400px;
-	border-radius: 10px;
 	margin: 10px;
 }
 .item {
@@ -15,24 +13,21 @@
 .question {
 	display: flex;
 	flex-direction: row;
-}
-.question:hover {
-	color: var(--light);
-	transition: all 0.5s ease;
-	cursor: pointer;
+	background: rgba(0,0,0,.2);
+	margin-bottom: 1px;
 }
 .answer {
 	display: flex;
 	flex-direction: row;
 	padding-left: 55px;
-	background: rgba(255,255,255,.5)
+	background: rgba(0,0,0,.2);
+	margin-bottom: 10px;
 }
 .question h1, h2 {
 	margin: 0;
 }
 .faq-type {
 	color: var(--primary);
-	text-shadow: 0 0 20px var(--dark);
 	flex: 0;
 	padding-left: 10px;
 	padding-right: 10px;

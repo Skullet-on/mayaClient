@@ -6,8 +6,7 @@ export default class Faq extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			faqList: [],
-			active: 0
+			faqList: []
 		}
 	}
 	
@@ -22,17 +21,9 @@ export default class Faq extends Component{
 			.catch(err => console.error(err.message))
 	}
 
-	updateActive = (value) => {
-		this.setState({active: value})
-	}
-
 	list(){
 		let list = this.state.faqList.map((faq, item) =>{ 
-			if (item === this.state.active) {
-				return <FaqItem key={item} id={item} faq={faq} isActive={true} updateActive={this.updateActive} />
-			} else {
-				return <FaqItem key={item} id={item} faq={faq} isActive={false} updateActive={this.updateActive} />
-			}
+			return <FaqItem key={item} id={item} faq={faq} isActive={true} />
 		})
 		return list;
 	}

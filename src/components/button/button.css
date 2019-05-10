@@ -10,28 +10,26 @@
 	color: var(--light-color);
 	box-sizing: border-box;
 	text-decoration: none;
-	border-radius: 10px;
 	font-size: 24px;
 	min-height: 50px;
 }
 .primary {
 	background-color: var(--primary);
-	color: var(--light);
+	color: var(--dark);
 }
 .default{
 	background-color: var(--default);
 }
 .primary:hover {
 	background-color: var(--primary-active);
-	color: var(--light);
-	box-shadow: 0 0 10px 10px var(--primary-active);
+	color: var(--dark);
 }
 .default:hover {
 	background-color: var(--default-active);
 }
 .large {
-	width: 300px;
-	height: 100px;
+	width: 200px;
+	height: 80px;
 	font-size: 27px;
 }
 .small {

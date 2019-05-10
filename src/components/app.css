@@ -3,7 +3,16 @@
 	flex-direction: column;
 	/*background: url(../assets/images/bg2.png) no-repeat 0 0 transparent;
 	background-size: 100% 100vh;*/
-	background: var(--dark);
+	background: var(--light);
+	background: url(../assets/images/bg1.jpg) no-repeat 100% 0 transparent;
+}
+.section1 {
+	
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .container {
 	display: flex;
@@ -11,8 +20,4 @@
 	justify-content: center;
 	align-items: center;
 	color: var(--default);
-	width: 100%;
-	min-height: 100vh;
-	min-height: 100vh;
-	padding-top: 76px;
 }
