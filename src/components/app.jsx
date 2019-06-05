@@ -22,10 +22,13 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Home />
-				<Cardslist />
-				<Faq />
-				<Contacts />
+				<div classname="page">
+					<Home />
+					<Cardslist />
+					<Faq />
+					<Contacts />
+					<Footer />
+				</div>
 			</div>
 		);
 	}

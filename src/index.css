@@ -1,5 +1,9 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Eras Demi ITC';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Eras Demi ITC'), url('./assets/ERASDEMI.woff') format('woff');
 }
 @font-face {
 	font-family: 'Eras Demi ITC';

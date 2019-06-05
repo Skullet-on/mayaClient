@@ -88,9 +88,8 @@ export default class Contacts extends Component{
 	}
 	render(){
 		return(
-			<div className="container">
+			<div className="contacts">
 				<h1>Still have question?</h1>
-
 				<FormErrors formErrors={this.state.formErrors} />
 				<div className="form">
 					<form onSubmit={e => this.handleSubmit(e)} method="POST">

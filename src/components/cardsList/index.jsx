@@ -49,6 +49,7 @@ export default class CardsList extends Component{
 		return(
 			<div className="section2">
 				{ this.list() }
+				<hr />
 			</div>
 		);
 	}

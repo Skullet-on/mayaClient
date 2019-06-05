@@ -1,4 +1,11 @@
-.content{
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	color: var(--default);
+}
+.content {
 	align-items: center;
 	justify-content: center;
 }

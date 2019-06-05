@@ -6,6 +6,7 @@ export default class Home extends Component{
 	render(){
 		return (
 			<div className="section1">
+				<div className="logo"><img src="logo4.png" alt="logo"></img></div>
 				<h1>More than Amazon S3</h1>
 				<h1>More than Windows Network drive</h1>
 				<h1><Button 
