@@ -5,6 +5,7 @@
 .card {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 hr {
 	width: 100%;
@@ -58,6 +59,17 @@ hr {
 .cardContent h2 {
 	color: var(--default);
 }*/
+.normal img{
+	max-width: 400px;
+}
+.reverse img{
+	max-width: 400px;
+}
+.cardImage {
+	flex: 1;
+	max-width: 400px;
+	margin: 10px;
+}
 @media (max-width: 1025px) {
 	.normal img{
 		width: 300px;
