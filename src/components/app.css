@@ -8,7 +8,8 @@
 }
 .section1 {
 	background: var(--light);
-	background: url(../assets/images/bg_xl.jpg) no-repeat 100% 0;
+	background: url(../assets/images/bg3.jpg) no-repeat 100% 0;
+	background-size: cover;
 	height: 800px;
 	display: flex;
 	flex-direction: column;

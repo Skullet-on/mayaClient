@@ -30,7 +30,8 @@ export default class Faq extends Component{
 
 	render(){
 		return(
-			<div className="container">
+			<div className="faq">
+				<h1>Frequently asked Questions</h1>
 				<div className="faq-container">
 					{ this.list() }
 				</div>

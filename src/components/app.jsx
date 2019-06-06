@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './app.css';
-import Router from './router';
-import Toolbar from './toolbar';
 import Footer from './footer';
 import Home from './home';
 import Cardslist from './cardsList';
