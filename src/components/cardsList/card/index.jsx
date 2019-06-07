@@ -5,7 +5,6 @@ export default class Card extends Component{
 	render(){
 		return (
 			<div className={this.props.className}>
-				<hr />
 				<div className="card">
 					<div className="cardImage">
 						<img src={this.props.img} alt=""/>

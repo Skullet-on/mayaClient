@@ -40,3 +40,7 @@
 .no-border {
 	border: none;	
 }
+a img {
+	width: 20%;
+	margin: 10px;
+}
