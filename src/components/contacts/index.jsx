@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './contacts.css';
 import { FormErrors } from './formErrors';
+import Button from '../button';
 
 export default class Contacts extends Component{
 	constructor(props) {
@@ -125,7 +126,7 @@ export default class Contacts extends Component{
 								placeholder='Message' 
 								name='message'/>
 						</div>
-						<button className="button primary no-border">Submit</button>
+						<button className="button primary no-border"><h2>Submit</h2></button>
 					</form>
 				</div>
 			</div>
