@@ -7,7 +7,6 @@
     margin: 15px 0 6px;
     font-size: 26px;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 .feature_main_cards {
     max-width: 950px;
@@ -40,9 +39,8 @@
 h3.feature_main_card_header {
     text-align: center;
     margin: 15px 0 6px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 .feature_main_card_lead {
     font-size: 18px;

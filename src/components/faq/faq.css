@@ -7,7 +7,6 @@
     margin: 15px 0 6px;
     font-size: 26px;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 .faq_main_cards {
     max-width: 950px;
@@ -35,12 +34,10 @@ h3.faq_main_card_header {
     margin: 15px 0 6px;
     font-size: 26px;
     font-weight: normal;
-    letter-spacing: -1px;
 }
 .faq_main_card_question {
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: bold;
-    letter-spacing: -1px;
 }
 .faq_main_card_answer {
     font-size: 18px;

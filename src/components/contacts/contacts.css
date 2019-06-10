@@ -9,7 +9,6 @@
     margin: 15px 0 6px;
     font-size: 26px;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 .contacts_main_form {
 	max-width: 950px;
@@ -48,7 +47,6 @@
 .contacts_main_form_item_header {
     font-size: 20px;
     font-weight: normal;
-	letter-spacing: -1px;
 }
 .contacts_submit {
 	background: var(--primary);
