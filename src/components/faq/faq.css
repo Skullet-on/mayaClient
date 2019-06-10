@@ -39,7 +39,7 @@ h3.faq_main_card_header {
 }
 .faq_main_card_question {
 	font-size: 22px;
-	font-weight: normal;
+	font-weight: bold;
     letter-spacing: -1px;
 }
 .faq_main_card_answer {
