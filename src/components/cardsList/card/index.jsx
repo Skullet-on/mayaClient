@@ -8,7 +8,6 @@ export default class Card extends Component{
 			<div className="feature_main_card_cell">
 				<div className="feature_main_card_wrap">
 					<div className={cn}>
-						<img src={this.props.img} alt=""/>
 					</div>
 					<h3 className="feature_main_card_header">{this.props.title}</h3>
 					<div className="feature_main_card_lead">
