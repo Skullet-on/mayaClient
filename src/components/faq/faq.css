@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 .faq_main_cards {
-    max-width: 950px;
+    max-width: 1200px;
     margin: 18px auto 0;
     padding: 0;
     display: flex;
@@ -24,7 +24,7 @@
 }
 .faq_main_card_question, .faq_main_card_answer {
 	background-color: rgba(0,0,0,.2); 
-	max-width: 950px;
+	max-width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-top: 1px;
