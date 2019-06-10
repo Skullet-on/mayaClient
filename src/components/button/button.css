@@ -17,6 +17,22 @@
 	background-color: var(--primary);
 	color: var(--dark);
 }
+.nocolor {
+	background-color:#F39A3100;
+	color: var(--dark);
+}
+.nocolor:hover {
+	background-color: var(--primary);
+	color: var(--dark);
+}
+.polcolor {
+	background-color:#F39A3150;
+	color: var(--dark);
+}
+.polcolor:hover {
+	background-color: var(--primary);
+	color: var(--dark);
+}
 .default{
 	background-color: var(--default);
 }

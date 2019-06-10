@@ -40,12 +40,12 @@
 h3.feature_main_card_header {
     text-align: center;
     margin: 15px 0 6px;
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: bold;
     letter-spacing: -1px;
 }
 .feature_main_card_lead {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 158%;
 }
 .feature_main_card_cloud {

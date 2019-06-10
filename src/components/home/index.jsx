@@ -12,9 +12,19 @@ export default class Home extends Component{
 				<h1><Button 
 					url="https://drive.google.com/uc?authuser=0&id=1Yn_rXP_MtrYiI0dXnHhBR_rYuClqDvZP&export=download"
 					value="Download"
-					className="button primary large"
+					className="button nocolor large"
 					icon="icon.png"
-				/></h1>
+				/><Button 
+				url="https://drive.google.com/uc?authuser=0&id=1Yn_rXP_MtrYiI0dXnHhBR_rYuClqDvZP&export=download"
+				value="Download"
+				className="button polcolor large"
+				icon="icon.png"
+			/><Button 
+			url="https://drive.google.com/uc?authuser=0&id=1Yn_rXP_MtrYiI0dXnHhBR_rYuClqDvZP&export=download"
+			value="Download"
+			className="button primary large"
+			icon="icon.png"
+		/></h1>
 			</div>
 		)
 	}

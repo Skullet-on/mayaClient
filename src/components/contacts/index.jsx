@@ -85,7 +85,6 @@ export default class Contacts extends Component{
 	}
 	validateForm() {
 		this.setState({formValid: this.state.emailValid && this.state.nameValid && this.state.subjectValid && this.state.messageValid});
-		console.log(this.state.formValid);
 		return this.state.formValid;
 	}
 	errorClass(error) {

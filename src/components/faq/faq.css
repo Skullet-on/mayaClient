@@ -38,11 +38,11 @@ h3.faq_main_card_header {
     letter-spacing: -1px;
 }
 .faq_main_card_question {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: normal;
     letter-spacing: -1px;
 }
 .faq_main_card_answer {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 158%;
 }
