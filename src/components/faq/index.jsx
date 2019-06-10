@@ -30,9 +30,9 @@ export default class Faq extends Component{
 
 	render(){
 		return(
-			<div className="faq">
-				<h1>Frequently asked Questions</h1>
-				<div className="faq-container">
+			<div className="faq_main_body">
+				<h3 className="faq_main_body_header">Frequently asked Questions</h3>
+				<div className="faq_main_cards clearfix">
 					{ this.list() }
 				</div>
 			</div>

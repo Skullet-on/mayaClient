@@ -1,103 +1,62 @@
-.cards{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: var(--default);
+.feature_main_body {
+	margin-top: 40px;
+	padding-top: 5px;
 }
-.features-container {
-	display: flex;
-	flex-direction: column;
-	color: var(--default);
-	max-width: 1300px;
-	min-width: 400px;
-	margin: 10px;
+.feature_main_body_header {
+    text-align: center;
+    margin: 15px 0 6px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -1px;
 }
-.item {
-	display: flex;
-	flex-direction: column;
+.feature_main_cards {
+    max-width: 950px;
+    margin: 18px auto 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.normal, .reverse {
-	display: flex;
-	flex-direction: column;
-	margin: 10px;
+.feature_main_card_cell {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    background-color: rgba(0,0,0,.2); 
 }
-.card {
-	display: flex;
-	align-items: center;
-	background: rgba(0,0,0,.2);
+.feature_main_card_wrap {
+    max-width: 187px;
+    margin: 0 auto;
+    padding: 20px 0 9px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
-.cardContent {
-	color: var(--default);
-	padding: 10px;
+.feature_main_card {
+    background-size: 187px;
+    height: 120px;
 }
-.reverse .card {
-	flex-direction: row-reverse;
+h3.feature_main_card_header {
+    text-align: center;
+    margin: 15px 0 6px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: -1px;
 }
-/*.normal {
-	display: flex;
-	align-items: center;
+.feature_main_card_lead {
+    font-size: 15px;
+    line-height: 158%;
 }
-.reverse {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
+.feature_main_card_cloud {
+    background-image: url(../img/cloud.png);
 }
-.normal, .reverse {
-	display: flex;
-	max-width: 100%;
-	margin: 10px;
-	padding: 20px;
-	justify-content: space-around;
+.feature_main_card_gui {
+    background-image: url(../img/gui.png);
 }
-.normal img{
-	max-width: 500px;
+.feature_main_card_speed {
+    background-image: url(../img/speed.png);
 }
-.reverse img{
-	max-width: 500px;
-}
-.content {
-	display: flex;
-	flex-direction: column;
-	align-content: space-around;
-}
-.cardImage {
-	flex: 1;
-	max-width: 500px;
-}
-.cardContent {
-	width: 600px;
-}
-.cardContent h1 {
-	color: var(--default);
-}
-.cardContent h2 {
-	color: var(--default);
-}*/
-.normal img{
-	max-width: 400px;
-}
-.reverse img{
-	max-width: 400px;
-}
-.cardImage {
-	flex: 1;
-	max-width: 400px;
-	margin: 10px;
-}
-@media (max-width: 1025px) {
-	.normal img{
-		width: 300px;
-	}
-	.reverse img{
-		width: 300px;
-	}
-}
-@media (max-width: 769px) {
-	.normal img{
-		width: 100px;
-	}
-	.reverse img{
-		width: 100px;
-	}
+.feature_main_card_advanced {
+    background-image: url(../img/advanced.png);
 }

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './contacts.css';
 import { FormErrors } from './formErrors';
-import Button from '../button';
 
 export default class Contacts extends Component{
 	constructor(props) {
@@ -19,7 +18,11 @@ export default class Contacts extends Component{
 		}
 	}
 	handleSubmit(event) {
-		event.preventDefault()
+		event.preventDefault();
+		if(!this.state.formValid){
+			console.log("nooo");
+			return false;
+		}
 		const data = {
 			email: this.state.email,
 			name: this.state.name,
@@ -82,53 +85,56 @@ export default class Contacts extends Component{
 	}
 	validateForm() {
 		this.setState({formValid: this.state.emailValid && this.state.nameValid && this.state.subjectValid && this.state.messageValid});
+		console.log(this.state.formValid);
+		return this.state.formValid;
 	}
-	
 	errorClass(error) {
 		return(error.length === 0 ? '' : 'has-error');
 	}
 	render(){
 		return(
-			<div className="contacts">
-				<h1>Still have question?</h1>
+			<div className="contacts_main_body">
+				<h1 className="contacts_main_body_header">Still have question?</h1>
 				<FormErrors formErrors={this.state.formErrors} />
-				<div className="form">
-					<form onSubmit={e => this.handleSubmit(e)} method="POST">
-						<div className="form-item">
-							<h2>Email</h2>
-							<input 
-								onChange={e => this.handleChange(e)}
-								value={this.state.email} 
-								placeholder='Email' 
-								name='email' />
-						</div>
-						<div className="form-item">
-							<h2>Name</h2>
-							<input 
-								onChange={e => this.handleChange(e)}
-								value={this.state.name} 
-								placeholder='Name' 
-								name='name'/>
-						</div>
-						<div className="form-item">
-							<h2>Subject</h2>
-							<input 
-								onChange={e => this.handleChange(e)}
-								value={this.state.subject} 
-								placeholder='Subject' 
-								name='subject'/>
-						</div>
-						<div className="form-item">
-							<h2>Message</h2>
-							<textarea 
-								onChange={e => this.handleChange(e)}
-								value={this.state.message} 
-								placeholder='Message' 
-								name='message'/>
-						</div>
-						<button className="button primary no-border"><h2>Submit</h2></button>
-					</form>
-				</div>
+				<form className="contacts_main_form" onSubmit={e => this.handleSubmit(e)} method="POST">
+					<div className="contacts_main_form_item">
+						<div className="contacts_main_form_item_header">Email</div>
+						<div className="contacts_main_form_item_content"><input 
+							onChange={e => this.handleChange(e)}
+							value={this.state.email} 
+							placeholder='Email' 
+							name='email' /></div>
+					</div>
+					<div className="contacts_main_form_item">
+						<div className="contacts_main_form_item_header">Name</div>
+						<div className="contacts_main_form_item_content"><input 
+							onChange={e => this.handleChange(e)}
+							value={this.state.name} 
+							placeholder='Name' 
+							name='name'/></div>
+					</div>
+					<div className="contacts_main_form_item">
+						<div className="contacts_main_form_item_header">Subject</div>
+						<div className="contacts_main_form_item_content"><input 
+							onChange={e => this.handleChange(e)}
+							value={this.state.subject} 
+							placeholder='Subject' 
+							name='subject'/></div>
+					</div>
+					<div className="contacts_main_form_item">
+						<div className="contacts_main_form_item_header">Message</div>
+						<div className="contacts_main_form_item_content"><textarea 
+							onChange={e => this.handleChange(e)}
+							value={this.state.message} 
+							placeholder='Message' 
+							name='message'/></div>
+					</div>
+					<div className="contacts_main_form_item">
+						<div></div>
+						<input type="submit" className="contacts_submit" value="Submit" />
+						<div></div>
+					</div>
+				</form>
 			</div>
 		)
 	}
