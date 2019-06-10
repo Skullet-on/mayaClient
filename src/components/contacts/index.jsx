@@ -20,7 +20,7 @@ export default class Contacts extends Component{
 	handleSubmit(event) {
 		event.preventDefault();
 		if(!this.state.formValid){
-			console.log("nooo");
+			alert("Invalid values ​​entered. All fields must be filled");
 			return false;
 		}
 		const data = {
@@ -95,8 +95,8 @@ export default class Contacts extends Component{
 		return(
 			<div className="contacts_main_body">
 				<h1 className="contacts_main_body_header">Still have question?</h1>
-				<FormErrors formErrors={this.state.formErrors} />
 				<form className="contacts_main_form" onSubmit={e => this.handleSubmit(e)} method="POST">
+					<FormErrors formErrors={this.state.formErrors} />
 					<div className="contacts_main_form_item">
 						<div className="contacts_main_form_item_header">Email</div>
 						<div className="contacts_main_form_item_content"><input 
