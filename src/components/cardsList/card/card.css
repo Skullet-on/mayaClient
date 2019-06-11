@@ -41,6 +41,7 @@ h3.feature_main_card_header {
     margin: 15px 0 6px;
     font-size: 18px;
     font-weight: bold;
+    min-height: 50px;
 }
 .feature_main_card_lead {
     font-size: 18px;

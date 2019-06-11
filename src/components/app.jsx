@@ -5,6 +5,7 @@ import Home from './home';
 import Cardslist from './cardsList';
 import Faq from './faq';
 import Contacts from './contacts';
+import Fonter from './fonter';
 
 class App extends Component {
 	api(url, method = 'GET', body = {}){
@@ -21,6 +22,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div className="page">
+					<Fonter />
 					<Home />
 					<Cardslist />
 					<Faq />
