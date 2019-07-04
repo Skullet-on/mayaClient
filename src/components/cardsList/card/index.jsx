@@ -3,14 +3,16 @@ import './card.css';
 
 export default class Card extends Component{
 	render(){
+		let cn = "feature_main_card " + this.props.img;
 		return (
-			<div className={this.props.className}>
-				<div className="cardImage">
-					<img src={this.props.img} alt=""/>
-				</div>
-				<div className="cardContent">
-					<h1>{this.props.title}</h1>
-					<h2>{this.props.text}</h2>
+			<div className="feature_main_card_cell">
+				<div className="feature_main_card_wrap">
+					<div className={cn}>
+					</div>
+					<h3 className="feature_main_card_header">{this.props.title}</h3>
+					<div className="feature_main_card_lead">
+						{this.props.text}
+					</div>
 				</div>
 			</div>
 		)

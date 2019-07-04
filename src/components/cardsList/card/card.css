@@ -1,58 +1,61 @@
-.normal {
-	display: flex;
-	align-items: center;
+.feature_main_body {
+	margin-top: 40px;
+	padding-top: 5px;
 }
-.reverse {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
+.feature_main_body_header {
+    text-align: center;
+    margin: 15px 0 6px;
+    font-size: 26px;
+    font-weight: bold;
 }
-.normal, .reverse {
-	display: flex;
-	max-width: 1200px;
-	margin: 10px;
-	padding: 20px;
-	border-radius: 20px;
-	background: rgba(255,255,255,.5);
+.feature_main_cards {
+    max-width: 1200px;
+    margin: 18px auto 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.normal img{
-	max-width: 500px;
+.feature_main_card_cell {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    background-color: rgba(0,0,0,.2); 
 }
-.reverse img{
-	max-width: 500px;
+.feature_main_card_wrap {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 20px 0 9px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
-.content {
-	display: flex;
-	flex-direction: column;
-	align-content: space-around;
+.feature_main_card {
+    background-size: 250px;
+    height: 159px;
 }
-.cardImage {
-	flex: 1;
-	max-width: 500px;
+h3.feature_main_card_header {
+    text-align: center;
+    margin: 15px 0 6px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 50px;
 }
-.cardContent {
-	flex: 3;
+.feature_main_card_lead {
+    font-size: 18px;
+    line-height: 158%;
 }
-.cardContent h1 {
-	color: var(--primary);
-	text-shadow: 0 0 10px var(--dark);
+.feature_main_card_cloud {
+    background-image: url(../img/cloud.png);
 }
-.cardContent h2 {
-	color: var(--dark);
+.feature_main_card_gui {
+    background-image: url(../img/gui.png);
 }
-@media (max-width: 1025px) {
-	.normal img{
-		width: 300px;
-	}
-	.reverse img{
-		width: 300px;
-	}
+.feature_main_card_speed {
+    background-image: url(../img/speed.png);
 }
-@media (max-width: 769px) {
-	.normal img{
-		width: 100px;
-	}
-	.reverse img{
-		width: 100px;
-	}
+.feature_main_card_advanced {
+    background-image: url(../img/advanced.png);
 }

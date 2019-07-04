@@ -1,0 +1,24 @@
+.button {
+	background: rgb(243, 154, 49);
+	border: 0;
+	width: 170px;
+	height: 75px;
+	font-size: 22px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nocolor {
+	background: rgba(243, 154, 49, 0);
+	color: var(--dark);
+}
+.nocolor:hover {
+	background-color:rgb(243, 154, 49);
+	color: var(--dark);
+}
+button img {
+	width: 20%;
+	margin: 10px;
+}

@@ -22,6 +22,7 @@ export default class Button extends Component{
 		return  <button
 				onClick={e => this.handleClick(e)}
 				className={this.props.className}>
+				<img src="icon.png" alt=""/>
 				{this.props.value}
 			</button>
 	}
@@ -31,6 +32,7 @@ export default class Button extends Component{
 		? <a href={this.props.url}
 			onClick={e => this.handleClick(e)}
 			className={this.props.className}>
+			<img src="icon.png" alt=""/>
 			{this.props.value}
 		</a>
 		: <Link to={this.props.url}
